@@ -9,7 +9,7 @@ export const Home = () => {
     <div>
       <div id='fotoPortada'></div>
       <section className='d-flex flex-column align-items-center justify-content-center my-5'>
-        <p className='container text-center py-4 my-3 slogan'>Somos <span className='color-secundario'>Guadalseu</span>, una reconocida empresa especializada en las reformas integrales, construcción y rehabilitación de edificios en Madrid.</p>
+        <p className='container text-center py-4 my-3 slogan'>Somos <span className='color-secundario'>Guadalseu</span>, una reconocida empresa especializada en las reformas integrales, construcción y rehabilitación de edificios en San Sebastián de los Reyes.</p>
       </section>
       <section className='fondo px-4 py-5 d-flex align-items-center justify-content-center'>
         <div className='sobreNosotrosContainer row'>
