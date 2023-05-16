@@ -2,8 +2,7 @@ import './Mapa.css'
 import { useLoadScript, GoogleMap, MarkerF } from "@react-google-maps/api"
 
 export const Mapa = ({ width = '100%', height = '100%' }) => {
-  /* const { loadError, isLoaded } = useLoadScript({ googleMapsApiKey: "AIzaSyCHR4M4itZqoNEHuAodYu7QNb1NRpnvhck" }) */
-  const { loadError, isLoaded } = useLoadScript({ googleMapsApiKey: process.env.API_GOOGLE })
+  const { loadError, isLoaded } = useLoadScript({ googleMapsApiKey: process.env.REACT_APP_API_GOOGLE })
 
   if (loadError) return <div>"Error loading Maps."</div>
   if (!isLoaded) return <div>"Loading Maps"</div>

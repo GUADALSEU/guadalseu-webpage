@@ -16,7 +16,7 @@ export const Formulario = () => {
     e.preventDefault();
 
     Email.send({
-      SecureToken: process.env.TOKEN_SMTPJS,
+      SecureToken: process.env.REACT_APP_TOKEN_SMTPJS,
       To: 'administracion@guadalseu.com',
       From: "axelurizarmartin@gmail.com",
       Subject: "Nuevo contacto desde la web",
