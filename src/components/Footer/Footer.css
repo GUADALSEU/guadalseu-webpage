@@ -1,0 +1,32 @@
+footer{
+    background-color: #862242;
+    color: white;
+    font-size: 0.8em;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+    min-height: 75%;
+}
+
+footer li{
+    transition: 200ms;
+    cursor: pointer;
+}
+
+footer li:hover{
+    color: #c7698a;
+}
+
+footer a {
+  color: white!important;
+}
+
+.fullHeight{
+    align-self: stretch;
+}
+
+.justifySelf{
+    margin: auto 0;
+}

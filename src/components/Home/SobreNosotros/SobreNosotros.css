@@ -1,0 +1,31 @@
+:root{
+    --secundario: #862242;
+}
+
+.fondo{
+    background-color: var(--secundario);
+    min-width: 100%;
+}
+
+.sobreNosotros{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 210px;
+    height: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 99px -40px rgba(0,0,0,0.75);
+}
+
+.sobreNosotros p {
+    font-weight: 500;
+}
+
+.capaBlanca{
+    min-width: 100%;
+    min-height: 210px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 10px;
+}

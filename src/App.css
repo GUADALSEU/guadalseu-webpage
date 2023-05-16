@@ -1,0 +1,30 @@
+:root{
+  --secundario: #a83468;
+}
+
+button{
+  border: 0;
+  padding: 12px;
+  background-color: var(--secundario);
+  color: white;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.35);
+  transition: 0.3s;
+}
+
+    button:hover{
+      filter: brightness(1.2);
+    }
+
+ul{
+  list-style: none;
+}
+
+.App{
+  min-height: 100vh;
+  width: calc(100vh - (100vh - 100%));
+  background-color: #edf0f1;
+}
+
+.point-list{
+  list-style: square;
+}

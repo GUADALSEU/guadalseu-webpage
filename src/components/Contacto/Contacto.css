@@ -1,0 +1,8 @@
+#contacto{
+    height: 100%;
+}
+@media (max-width: 992px){
+    #mapaConDatos {
+        flex-direction: column-reverse;
+    }
+}

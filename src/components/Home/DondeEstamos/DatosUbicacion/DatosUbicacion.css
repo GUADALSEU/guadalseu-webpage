@@ -1,0 +1,31 @@
+legend {
+  width: auto;
+  padding: 0 10px;
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: inherit;
+  border-bottom: none;
+  text-align: left;
+}
+
+fieldset {
+    border: 2px solid #862242;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+legend{
+    float: none!important
+}
+
+.datosUbicacion{
+    font-size: 1.2em;
+}
+
+.madrid{
+    font-weight: 500;
+}
+
+.otrosDatos{
+    color: rgba(0, 0, 0, 0.6)
+}

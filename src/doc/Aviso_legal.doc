@@ -1,0 +1,421 @@
+<html><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><head><style>body { font-family: "helvetica";font-size:0.8em;}
+h1 {padding:7px 5px 5px 5px;}
+h2 {padding:7px 5px 5px 5px;}
+h3 {padding:7px 5px 5px 5px;}
+h4 {padding:7px 5px 5px 5px;}@page {
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+h1 {
+    border: 0px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    font-size: 18px;
+}
+
+h2 {
+    border: 0px;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+    font-size: 15px;
+}
+
+h3 {
+    border: 0px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    font-size: 14px;
+}
+
+h4 {
+    border: 0px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    font-size: 13px;
+}
+
+h5 {
+    border: 0px;
+    margin: 10px 0px 10px 0px;
+    font-size: 12px;
+}
+
+h6 {
+    border: 0px;
+    margin: 10px 0px 10px 0px;
+    font-size: 12px;
+}
+
+.pdf_datatable {
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    font-size: 11px;
+}
+
+.pdf_datatable th {
+    border: 1px solid #bbbbbb;
+}
+
+.pdf_datatable td {
+    border: 1px solid #bbbbbb;
+    padding: 5px;
+}
+
+.error {
+    color: #ee0000;
+}
+
+.msg_info {
+    padding: 4px;
+    background-color: #ddffdd;
+    color: #000000;
+    border: 1px solid #00aa00;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.msg_error {
+    padding: 4px;
+    background-color: #dd0000;
+    font-size: 11px;
+    color: #ffffff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.msg_alert {
+    padding: 4px;
+    background-color: #ffffaa;
+    color: #000000;
+    border: 1px solid #ff0000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+table {
+    border: 0px;
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+    border: 0px;
+}
+
+th {
+    padding: 3px 5px;
+    background: #dddddd;
+}
+
+
+pre, code {background-color: #DDD;padding: 10px}
+
+@page :first {
+    header: html_firstpageheader;
+    footer: html_firstpagefooter;
+}
+
+@page rotated {
+    size: landscape;
+}
+
+@page pvertical {
+    size: portrait;
+}
+
+div.apaisada {
+    page: rotated;
+    page-break-before: none;
+}
+
+div.vertical {
+    page: pvertical;
+    page-break-before: none;
+}
+
+@page inicio_sin_cabecera {
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    margin-left: 0mm;
+    margin-right: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+div.inicio_sin_cabecera {
+    page-break-before: none;
+    page: inicio_sin_cabecera;
+}
+
+@page final_sin_cabecera {
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.final_sin_cabecera {
+    page-break-before: none;
+    page: final_sin_cabecera;
+}
+
+@page cartel_videovigilancia {
+    background-image: url('/admin/install/files/cartel-videovigilancia.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_videovigilancia {
+    page-break-before: none;
+    page: cartel_videovigilancia;
+}
+
+@page cartel_videovigilancia_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_videovigilancia_end {
+    page-break-before: none;
+    page: cartel_videovigilancia_end;
+}
+
+@page cartel_videovigilancia_personalizado {
+    background-image: url('/media/public/cartel-videovigilancia-personalizado.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_videovigilancia_personalizado {
+    page-break-before: none;
+    page: cartel_videovigilancia_personalizado;
+}
+
+@page cartel_videovigilancia_personalizado_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_videovigilancia_personalizado_end {
+    page-break-before: none;
+    page: cartel_videovigilancia_personalizado_end;
+}
+
+@page cartel_videovigilancia_desactivada {
+    background-image: url('/admin/install/files/cartel-videovigilancia_desactivada.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_videovigilancia_desactivada {
+    page-break-before: none;
+    page: cartel_videovigilancia_desactivada;
+}
+
+@page cartel_videovigilancia_desactivada_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_videovigilancia_desactivada_end {
+    page-break-before: none;
+    page: cartel_videovigilancia_desactivada_end;
+}
+
+@page cartel_videovigilancia_voz {
+    background-image: url('/admin/install/files/cartel-videovigilancia_voz.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_videovigilancia_voz {
+    page-break-before: none;
+    page: cartel_videovigilancia_voz;
+}
+
+@page cartel_videovigilancia_voz_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_videovigilancia_voz_end {
+    page-break-before: none;
+    page: cartel_videovigilancia_voz_end;
+}
+
+@page cartel_termovigilancia {
+    background-image: url('/admin/install/files/cartel-termovigilancia.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_termovigilancia {
+    page-break-before: none;
+    page: cartel_termovigilancia;
+}
+
+@page cartel_termovigilancia_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_termovigilancia_end {
+    page-break-before: none;
+    page: cartel_termovigilancia_end;
+}
+
+@page cartel_BgTermoControl {
+    background-image: url('/admin/install/files/cartel_BgTermoControl.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+div.bg_cartel_BgTermoControl {
+    page-break-before: none;
+    page: cartel_BgTermoControl;
+}
+@page cartel_BgTermoControl_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+div.bg_cartel_BgTermoControl_end {
+    page-break-before: none;
+    page: cartel_BgTermoControl_end;
+}
+
+@page BgFondo1 { background-image: url('/media/image/BgFondo1.jpg'); background-image-resize: 6; }
+div.BgFondo1 { page-break-before: none; page: BgFondo1; }
+@page FinalBgFondo1 { background-image: none; }
+div.FinalBgFondo1 { page-break-before: none; page: FinalBgFondo1; }
+
+@page BgFondo2 { background-image: url('/media/image/BgFondo2.jpg'); background-image-resize: 6; }
+div.BgFondo2 { page-break-before: none; page: BgFondo2; }
+@page FinalBgFondo2 { background-image: none; }
+div.FinalBgFondo2 { page-break-before: none; page: FinalBgFondo2; }
+
+@page BgFondo3 { background-image: url('/media/image/BgFondo3.jpg'); background-image-resize: 6; }
+div.BgFondo3 { page-break-before: none; page: BgFondo3; }
+@page FinalBgFondo3 { background-image: none; }
+div.FinalBgFondo3 { page-break-before: none; page: FinalBgFondo3; }
+
+@page BgFondo4 { background-image: url('/media/image/BgFondo4.jpg'); background-image-resize: 6; }
+div.BgFondo4 { page-break-before: none; page: BgFondo4; }
+@page FinalBgFondo4 { background-image: none; }
+div.FinalBgFondo4 { page-break-before: none; page: FinalBgFondo4; }
+
+@page BgDiploma1 { background-image: url('/media/image/BgFondo6.jpg'); background-image-resize: 6; }
+div.BgDiploma1 { page-break-before: none; page: BgDiploma1; }
+@page FinalBgDiploma1 { background-image: none; }
+div.FinalBgDiploma1 { page-break-before: none; page: FinalBgDiploma1; }
+h1 {background:#FFFFFF;color:#333333;}
+h2 {background:#1A2666;color:#FFFFFF;}
+h3 {background:#FFD91D;color:#333333;}
+h4 {background:#FFFB83;color:#333333;}
+.pdf_datatable th {background:#DCBC53;color:#000000}
+</style></head><body><h2 style="text-align:center;">WEB: Aviso legal</h2><div>&nbsp;</div><div>&nbsp;</div>
+
+<div style=""></div>
+
+<div style="text-align: center;"><span style="font-size:14px"><strong>LEY DE LOS SERVICIOS DE LA SOCIEDAD DE LA INFORMACI&Oacute;N (LSSI)</strong></span></div>
+
+<div>
+<div>&nbsp;</div><div>&nbsp;</div>
+
+<p style=""><span style="font-size:14px">CONST. Y REHABILITACION GUADALSEU S.L, responsable del sitio web, en adelante RESPONSABLE, pone a disposici&oacute;n de los usuarios el presente documento, con el que pretende dar cumplimiento a las obligaciones dispuestas en la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Informaci&oacute;n y de Comercio Electr&oacute;nico (LSSICE), BOE N.&ordm; 166, as&iacute; como informar a todos los usuarios del sitio web respecto a cu&aacute;les son las condiciones de uso.</span></p>
+
+<div style=""><span style="font-size:14px">Toda persona que acceda a este sitio web asume el papel de usuario, comprometi&eacute;ndose a la observancia y cumplimiento riguroso de las disposiciones aqu&iacute; dispuestas, as&iacute; como a cualquier otra disposici&oacute;n legal que fuera de aplicaci&oacute;n. </span></div>
+
+<p style=""><span style="font-size:14px">CONST. Y REHABILITACION GUADALSEU S.L se reserva el derecho de modificar cualquier tipo de informaci&oacute;n que pudiera aparecer en el sitio web, sin que exista obligaci&oacute;n de preavisar o poner en conocimiento de los usuarios dichas obligaciones, entendi&eacute;ndose como suficiente la publicaci&oacute;n en el sitio web de CONST. Y REHABILITACION GUADALSEU S.L.</span></p>
+
+<p><span style="font-size:14px"><strong>1. DATOS IDENTIFICATIVOS</strong></span></p>
+
+<p><span style="font-size:14px">Nombre de dominio: <a href="http://www.guadalseusolar.com/" target="_blank">www.guadalseusolar.com/</a><br />
+Nombre comercial: Guadalseusolar<br />
+Denominaci&oacute;n social: CONST. Y REHABILITACION GUADALSEU S.L<br />
+NIF: B25691296<br />
+Domicilio social: Avenida Antonio Machado 84 28702 San Sebastián de los Reyes MADRID<br />
+Tel&eacute;fono: 91 663 83 35<br />
+E-mail: administracion@guadalseu.com<br />
+INSCRITA EN EL REGISTRO MERCANTIL DE MADRID, TOMO 33319, FOLIO 117,HOJA 599681.</span></p>
+</div>
+
+<div></div>
+
+<div><span style="font-size:14px"><strong>2. DERECHOS DE PROPIEDAD INTELECTUAL E INDUSTRIAL</strong></span></div>
+
+<div></div>
+
+<div><span style="font-size:14px">El sitio web, incluyendo a t&iacute;tulo enunciativo pero no limitativo su programaci&oacute;n, edici&oacute;n, compilaci&oacute;n y dem&aacute;s elementos necesarios para su funcionamiento, los dise&ntilde;os, logotipos, texto y/o gr&aacute;ficos, son propiedad del RESPONSABLE o, si es el caso, dispone de licencia o autorizaci&oacute;n expresa por parte de los autores. Todos los contenidos del sitio web se encuentran debidamente protegidos por la normativa de propiedad intelectual e industrial, as&iacute; como inscritos en los registros p&uacute;blicos correspondientes. </span><span style="font-size:14px"></span></div>
+
+<div><span style="font-size:14px">Independientemente de la finalidad para la que fueran destinados, la reproducci&oacute;n total o parcial, uso, explotaci&oacute;n, distribuci&oacute;n y comercializaci&oacute;n, requiere en todo caso la autorizaci&oacute;n escrita previa por parte del RESPONSABLE. Cualquier uso no autorizado previamente se considera un incumplimiento grave de los derechos de propiedad intelectual o industrial del autor. </span><span style="font-size:14px"></span></div>
+
+<div><span style="font-size:14px">Los dise&ntilde;os, logotipos, texto y/o gr&aacute;ficos ajenos al RESPONSABLE y que pudieran aparecer en el sitio web, pertenecen a sus respectivos propietarios, siendo ellos mismos responsables de cualquier posible controversia que pudiera suscitarse respecto a los mismos. El RESPONSABLE autoriza expresamente a que terceros puedan redirigir directamente a los contenidos concretos del sitio web, y en todo caso redirigir al sitio web principal de <a href="http://www.guadalseusolar.com/" target="_blank">www.guadalseusolar.com/</a>. </span><span style="font-size:14px"> </span></div>
+
+<div><span style="font-size:14px">El RESPONSABLE reconoce a favor de sus titulares los correspondientes derechos de propiedad intelectual e industrial, no implicando su sola menci&oacute;n o aparici&oacute;n en el sitio web la existencia de derechos o responsabilidad alguna sobre los mismos, como tampoco respaldo, patrocinio o recomendaci&oacute;n por parte del mismo.</span></div>
+
+<div><span style="font-size:14px">Para realizar cualquier tipo de observaci&oacute;n respecto a posibles incumplimientos de los derechos de propiedad intelectual o industrial, as&iacute; como sobre cualquiera de los contenidos del sitio web, puede hacerlo a trav&eacute;s del correo electr&oacute;nico administracion@guadalseu.com.</span><br />
+ </div>
+
+<div style=""><span style="font-size:14px"><strong>3. EXENCI&Oacute;N DE RESPONSABILIDADES</strong></span></div>
+
+<div style=""></div>
+
+<div style=""><span style="font-size:14px">El RESPONSABLE se exime de cualquier tipo de responsabilidad derivada de la informaci&oacute;n publicada en su sitio web siempre que no tenga conocimiento efectivo de que esta informaci&oacute;n haya sido manipulada o introducida por un tercero ajeno al mismo o, si lo tiene, haya actuado con diligencia para retirar los datos o hacer imposible el acceso a ellos.</span></div>
+
+<div style=""></div>
+
+<div style=""><span style="font-size:14px"><strong>Uso de Cookies</strong></span><span style="font-size:14px"></span></div>
+
+<div style=""><span style="font-size:14px">Este sitio web puede utilizar cookies t&eacute;cnicas (peque&ntilde;os archivos de informaci&oacute;n que el servidor env&iacute;a al ordenador de quien accede a la p&aacute;gina) para llevar a cabo determinadas funciones que son consideradas imprescindibles para el correcto funcionamiento y visualizaci&oacute;n del sitio. Las cookies utilizadas tienen, en todo caso, car&aacute;cter temporal, con la &uacute;nica finalidad de hacer m&aacute;s eficaz la navegaci&oacute;n, y desaparecen al terminar la sesi&oacute;n del usuario. En ning&uacute;n caso, estas cookies proporcionan por s&iacute; mismas datos de car&aacute;cter personal y no se utilizar&aacute;n para la recogida de los mismos. </span><span style="font-size:14px"></span></div>
+
+<div style=""><span style="font-size:14px">Mediante el uso de cookies tambi&eacute;n es posible que el servidor donde se encuentra la web reconozca el navegador utilizado por el usuario con la finalidad de que la navegaci&oacute;n sea m&aacute;s sencilla, permitiendo, por ejemplo, el acceso de los usuarios que se hayan registrado previamente a las &aacute;reas, servicios, promociones o concursos reservados exclusivamente a ellos sin tener que registrarse en cada visita. Tambi&eacute;n se pueden utilizar para medir la audiencia, par&aacute;metros de tr&aacute;fico, controlar el progreso y n&uacute;mero de entradas, etc., siendo en estos casos cookies prescindibles t&eacute;cnicamente, pero beneficiosas para el usuario. Este sitio web no instalar&aacute; <i>cookies</i> prescindibles sin el consentimiento previo del usuario.</span></div>
+
+<div style=""><span style="font-size:14px">El usuario tiene la posibilidad de configurar su navegador para ser alertado de la recepci&oacute;n de cookies y para impedir su instalaci&oacute;n en su equipo. Por favor, consulte las instrucciones de su navegador para ampliar esta informaci&oacute;n.</span><br />
+ </div>
+
+<div style=""><span style="font-size:14px"><strong>Pol&iacute;tica de enlaces</strong></span><span style="font-size:14px"></span></div>
+
+<div style=""><span style="font-size:14px">Desde el sitio web, es posible que se redirija a contenidos de terceros sitios web. Dado que el RESPONSABLE no puede controlar siempre los contenidos introducidos por terceros en sus respectivos sitios web, no asume ning&uacute;n tipo de responsabilidad respecto a dichos contenidos. En todo caso, proceder&aacute; a la retirada inmediata de cualquier contenido que pudiera contravenir la legislaci&oacute;n nacional o internacional, la moral o el orden p&uacute;blico, procediendo a la retirada inmediata de la redirecci&oacute;n a dicho sitio web, poniendo en conocimiento de las autoridades competentes el contenido en cuesti&oacute;n. </span><span style="font-size:14px"></span></div>
+
+<div style=""><span style="font-size:14px">El RESPONSABLE no se hace responsable de la informaci&oacute;n y contenidos almacenados, a t&iacute;tulo enunciativo pero no limitativo, en foros, chats, generadores de blogs, comentarios, redes sociales o cualquier otro medio que permita a terceros publicar contenidos de forma independiente en la p&aacute;gina web del RESPONSABLE. Sin embargo, y en cumplimiento de lo dispuesto en los art&iacute;culos 11 y 16 de la LSSICE, se pone a disposici&oacute;n de todos los usuarios, autoridades y fuerzas de seguridad, colaborando de forma activa en la retirada o, en su caso, bloqueo de todos aquellos contenidos que puedan afectar o contravenir la legislaci&oacute;n nacional o internacional, los derechos de terceros o la moral y el orden p&uacute;blico. En caso de que el usuario considere que existe en el sitio web alg&uacute;n contenido que pudiera ser susceptible de esta clasificaci&oacute;n, se ruega lo notifique de forma inmediata al administrador del sitio web. </span><span style="font-size:14px"></span></div>
+
+<div style=""><span style="font-size:14px">Este sitio web se ha revisado y probado para que funcione correctamente. En principio, puede garantizarse el correcto funcionamiento los 365 d&iacute;as del a&ntilde;o, 24 horas al d&iacute;a. Sin embargo, el RESPONSABLE no descarta la posibilidad de que existan ciertos errores de programaci&oacute;n, o que acontezcan causas de fuerza mayor, cat&aacute;strofes naturales, huelgas o circunstancias semejantes que hagan imposible el acceso a la p&aacute;gina web.</span><br />
+ </div>
+
+<div style=""><span style="font-size:14px"><strong>Direcciones IP</strong></span></div>
+
+<div style=""><span style="font-size:14px">Los servidores del sitio web podr&aacute;n detectar de manera autom&aacute;tica la direcci&oacute;n IP y el nombre de dominio utilizados por el usuario. Una direcci&oacute;n IP es un n&uacute;mero asignado autom&aacute;ticamente a un ordenador cuando este se conecta a Internet. Toda esta informaci&oacute;n se registra en un fichero de actividad del servidor que permite el posterior procesamiento de los datos con el fin de obtener mediciones &uacute;nicamente estad&iacute;sticas que permitan conocer el n&uacute;mero de impresiones de p&aacute;ginas, el n&uacute;mero de visitas realizadas a los servidores web, el orden de visitas, el punto de acceso, etc.</span></div>
+
+<div style=""></div>
+
+<div style=""><span style="font-size:14px"><strong>4. LEY APLICABLE Y JURISDICCI&Oacute;N</strong></span></div>
+
+<div style=""></div>
+
+<div style=""><span style="font-size:14px">Para la resoluci&oacute;n de todas las controversias o cuestiones relacionadas con el presente sitio web o de las actividades en &eacute;l desarrolladas, ser&aacute; de aplicaci&oacute;n la legislaci&oacute;n espa&ntilde;ola, a la que se someten expresamente las partes, siendo competentes para la resoluci&oacute;n de todos los conflictos derivados o relacionados con su uso los Juzgados y Tribunales del domicilio del USUARIO o el lugar del cumplimiento de la obligaci&oacute;n.</span></div>
+</body></html>

@@ -1,0 +1,31 @@
+textarea {
+  resize: none;
+}
+
+form  fieldset {
+  padding: 5px 15px;
+}
+
+input, textarea {
+  border: none;
+  background-color: transparent;
+  /* color: #862242; */
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+@media (max-width: 576px){
+  form > div {
+    flex-direction: column;
+  }
+
+  .cajaInputs{
+    width: 100%!important
+  }
+
+  fieldset {
+    margin: 7px 0;
+  }
+}
